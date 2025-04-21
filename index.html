@@ -15,6 +15,7 @@
             <a href="#" class="text-2xl font-bold text-blue-600">Your Name</a>
             <nav class="hidden md:block">
                 <ul class="flex space-x-6">
+                    <li><a href="#hero" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
                     <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a></li>
                     <li><a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a></li>
                     <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a></li>
@@ -28,6 +29,7 @@
         <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
             <ul class="px-4 py-2">
+                <li><a href="#hero" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a></li>
                 <li><a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a></li>
                 <li><a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Skills</a></li>
                 <li><a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600 transition">Projects</a></li>
@@ -37,7 +39,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="about" class="pt-24 pb-16 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+    <section id="hero" class="pt-24 pb-16 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0">
                 <img src="https://via.placeholder.com/300" alt="Profile Picture" class="rounded-full w-48 h-48 mx-auto md:mx-0 object-cover border-4 border-white shadow-lg">
@@ -47,9 +49,140 @@
                 <h2 class="text-2xl mb-6">Web Developer & Designer</h2>
                 <p class="text-lg mb-8">I'm passionate about creating beautiful, functional websites and applications. With expertise in front-end and back-end technologies, I bring ideas to life through code.</p>
                 <div class="flex space-x-4 justify-center md:justify-start">
-                    <a href="#contact" class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-100 transition">Contact Me</a>
+                    <a href="#about" class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-100 transition">About Me</a>
                     <a href="#projects" class="border-2 border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-600 transition">View Work</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+        
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Personal Bio -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-user mr-2"></i> Personal Bio
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                        I'm a passionate web developer with over 5 years of experience creating responsive and user-friendly websites and applications. I specialize in front-end development but also have strong back-end skills.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        My approach to web development focuses on creating clean, efficient code that delivers exceptional user experiences. I'm constantly learning new technologies and techniques to stay at the forefront of web development.
+                    </p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><strong>Age:</strong> 28</li>
+                        <li><strong>Location:</strong> City, Country</li>
+                        <li><strong>Languages:</strong> English (Native), Spanish (Intermediate), French (Basic)</li>
+                        <li><strong>Nationality:</strong> Your Nationality</li>
+                    </ul>
+                </div>
+            
+                <!-- Education -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-graduation-cap mr-2"></i> Education
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Master of Computer Science</h4>
+                            <p class="text-gray-600">University Name, 2018-2020</p>
+                            <p class="text-gray-700 mt-2">Specialized in Web Technologies and User Experience Design. Graduated with honors.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Bachelor of Science in Information Technology</h4>
+                            <p class="text-gray-600">University Name, 2014-2018</p>
+                            <p class="text-gray-700 mt-2">Focused on software development and database management. Participated in multiple hackathons and coding competitions.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Certifications</h4>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li>Full Stack Web Development (Platform Name)</li>
+                                <li>UI/UX Design Fundamentals (Platform Name)</li>
+                                <li>Advanced JavaScript (Platform Name)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Work Experience -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-briefcase mr-2"></i> Work Experience
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Senior Front-end Developer</h4>
+                            <p class="text-gray-600">Company Name, 2021-Present</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li>Lead development of responsive web applications</li>
+                                <li>Collaborate with UX/UI designers to implement designs</li>
+                                <li>Mentor junior developers and conduct code reviews</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Web Developer</h4>
+                            <p class="text-gray-600">Company Name, 2018-2021</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li>Developed and maintained client websites</li>
+                                <li>Implemented responsive designs and interactive features</li>
+                                <li>Optimized websites for maximum speed and scalability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Interests and Hobbies -->
+            <div class="mt-8 bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                    <i class="fas fa-heart mr-2"></i> Interests & Hobbies
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4">
+                        <i class="fas fa-book text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Reading</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-hiking text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Hiking</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-camera text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Photography</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-music text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Music</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-plane text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Traveling</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-chess text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Chess</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-code text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Coding</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-palette text-3xl text-gray-700 mb-2"></i>
+                        <p class="text-gray-800 font-medium">Art</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Personal Philosophy -->
+            <div class="mt-8 bg-blue-50 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 class="text-xl font-bold mb-4 text-blue-600">My Philosophy</h3>
+                <blockquote class="text-gray-700 italic">
+                    "I believe that great web development is about more than just code—it's about creating experiences that make people's lives better. Every project I take on is an opportunity to solve problems and create something meaningful."
+                </blockquote>
             </div>
         </div>
     </section>
@@ -259,4 +392,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
