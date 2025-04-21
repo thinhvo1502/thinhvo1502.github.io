@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Add scroll reveal animation
-  const revealElements = document.querySelectorAll(".skill-card, .project-card")
+  // Add scroll reveal animation for all sections
+  const revealElements = document.querySelectorAll(".skill-card, .project-card, #about .bg-gray-50, #about .bg-blue-50")
 
   function checkReveal() {
     const triggerBottom = window.innerHeight * 0.8
