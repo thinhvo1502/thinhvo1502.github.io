@@ -64,3 +64,59 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+
+/* Add styles for the new About section */
+
+/* Card hover effects */
+#about .bg-gray-50,
+#about .bg-blue-50 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .bg-gray-50:hover,
+#about .bg-blue-50:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Interest icons */
+#about .fas {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#about .text-center:hover .fas {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
+
+/* Timeline style for education and experience */
+#about h4 {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+#about h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #3b82f6;
+}
+
+/* Blockquote styling */
+blockquote {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 3rem;
+  position: absolute;
+  left: -0.5rem;
+  top: -1rem;
+  color: #93c5fd;
+  opacity: 0.5;
+}
